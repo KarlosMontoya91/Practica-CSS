@@ -1,0 +1,193 @@
+#titulo { /* Esta funcion cambia el color especialmente de titulo */
+    color: tomato;
+}
+
+p.especial {
+    color: mediumseagreen;
+}
+
+p.texto { 
+    color: slateblue;
+}
+
+div p {
+    color: aquamarine;
+}
+
+div h2, div h3 {
+    color: brown;
+}
+
+* {     /* Esta funcion universal solo hace cambios si no an sido alterados por otro comando */
+    font-size: 24px;
+    /* color: black; */
+}
+/*
+.color {
+    color: #0f0000; /* Dar color en hexadecimal
+}
+*/
+/*
+.color {
+    color: rgb(0, 255, 255); /* Dar color en rgb
+} */
+
+.color {
+    /*border: 5px red outset; */
+    /* Esta funcion de ayuda a darle un borde a tu texto
+        dotted
+        dashed
+        solid
+        double
+        groove
+        ridge
+        inset
+        outset
+        none
+        hidden
+        */
+        border-style: solid;
+        border-color: blue;
+        border-radius: 10px;
+        border-width: 2px;
+} 
+
+#fondo {
+    background-color: rgba(255, 255, 255); /* estas 2 funciones son para dar un fondo y opacidad a un recuadro*/
+    /*opacity: 0.3;*/
+    height: 200px;
+    background-image: url("banner.png"); /* sirve para poner de fondo una imagen*/
+    background-repeat: no-repeat; /*esto es para que la imaghen no se repita en el background*/
+    background-position: center center; /*esta funcionm posiciona la imagen en el background*/
+    background: #fff url('banner.png') no repeat center bottom / 100px 100px;
+    /*background-size: 400px 200px; /* esta funcion es para darle distintos valotres a una imagen*/
+}
+
+.margen {
+    background-color: gray;
+    margin: 15px;
+    padding:  30px; /* esta funcion da un relleno dentro del margen*/
+    border: solid 1px black; /* Da un borde al margen */
+    height: 50px;
+    width: 100px;
+    overflow: visible;   /* esta funcion ayuda a dar los tipos de visivilidad al texto dentro del margen*/
+    outline: 1px solid red;
+}
+
+.text {
+    font-family:'Grape Nuts', sans-serif;
+    text-align: center justify;
+    text-decoration: overline;
+    text-shadow: 3px 5px 5px blue;
+}
+
+a :link {
+    color:blueviolet;
+}
+
+a :visited {
+    color:gray; 
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:active {
+    color: red;
+}
+
+ul {
+    background-color: cyan;
+     list-style: georgian; 
+     padding-left: 1; 
+    /* list-style-position: inside; */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse ;
+}
+
+th, td {
+    border: solid 1px #eee;
+    padding: 5px;
+}
+
+th {
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+tr:hover {  /* Da un sombreado a la linea de la tabla al pasar el puntero sobre ella*/
+    background-color:  #aaa;
+    cursor: pointer; /* cambia la animacion del cursor al pasar sobre la tabla*/
+}
+
+span {
+    display: block; /* realiza un salto de linea en la funcion span*/
+    /*visibility:  hidden;*/
+    max-width: 300px;
+    background-color: red;
+}
+
+.inline {
+    display: inline; /* Hace que los div con clase "inline" se mantengan en una sola linea*/
+    /*display: none;*/
+    
+}
+
+#position {
+    position: sticky;
+    left:  20px;
+    top: 25px;
+}
+
+.left { 
+    float: left; /* mantiene el texto a la izquiera del parrafo*/
+    width: 100px;
+    height: 100px;
+}
+
+.right {
+    float: right;
+
+}
+
+.container {
+    height:  200px;
+}
+
+/*.card { /* da forma a las tarjetas creadas
+    border: solid 1px #ddd;
+    border-radius: 5px;
+    margin: 0;
+    padding: 10px 0;
+    width: 33.3%; 
+}*/
+
+.column {
+    margin: 0;
+    padding: 10px 0;
+    width: 33.3%;
+}
+
+.inline-block {
+    display: inline-block;
+    height:  55px;
+    background-color: blue;
+}
+
+.center { /* esta accion realiza un centrado en el texto en la pagina realizada */
+    padding: 50px 0;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+}
+
